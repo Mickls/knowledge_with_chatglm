@@ -19,3 +19,5 @@ print(torch.cuda.is_available())
 2. 部署`milvus`服务: `docker-compose up -d`
 3. 初始化向量索引库，将文档预处理并转为向量建立索引: `python document_preprocess.py`
 4. 启动服务: `python web_demo.py`
+
+如果对本项目源码有更多的好奇，可以参考以下文章[chatglm实现基于知识库问答的应用](https://blog.csdn.net/a914541185/article/details/130150101)
