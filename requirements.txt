@@ -1,0 +1,10 @@
+PyMySQL
+transformers~=4.28.0
+torch~=2.0.0+cu118
+pandas~=2.0.0
+jieba~=0.42.1
+pymilvus~=2.2.6
+langchain~=0.0.141
+gradio~=3.27.0
+protobuf~=4.22.3
+cpm_kernels
