@@ -4,8 +4,8 @@ import mdtex2html
 
 from knowledge_query import search_similar_text
 
-tokenizer = AutoTokenizer.from_pretrained("E:\huggingface\models--THUDM--chatglm-6b-int4\snapshots\9163f7e6d9b2e5b4f66d9be8d0288473a8ccd027", trust_remote_code=True)
-model = AutoModel.from_pretrained("E:\huggingface\models--THUDM--chatglm-6b-int4\snapshots\9163f7e6d9b2e5b4f66d9be8d0288473a8ccd027", trust_remote_code=True).half().cuda()
+tokenizer = AutoTokenizer.from_pretrained("THUDM/chatglm-6b-int4", trust_remote_code=True)
+model = AutoModel.from_pretrained("THUDM/chatglm-6b-int4", trust_remote_code=True).half().cuda()
 model = model.eval()
 is_knowledge = True
 
@@ -96,7 +96,7 @@ def reset_state():
 
 
 with gr.Blocks() as demo:
-    gr.HTML("""<h1 align="center">阿成的专属Chat</h1>""")
+    gr.HTML("""<h1 align="center">ChatGLM</h1>""")
 
     chatbot = gr.Chatbot()
     with gr.Row():

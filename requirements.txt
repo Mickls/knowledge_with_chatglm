@@ -8,3 +8,5 @@ langchain~=0.0.141
 gradio~=3.27.0
 protobuf~=4.22.3
 cpm_kernels
+mdtex2html
+sentence_transformers
